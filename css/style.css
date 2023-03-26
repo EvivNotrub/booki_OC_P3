@@ -52,6 +52,21 @@ body {
 .neutralStar {
     color: var(--main-bg-color)
 }
+/****** Header avec Nav ***********/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
