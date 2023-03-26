@@ -16,6 +16,11 @@
 body {
     display: flex;
     justify-content: center;
+    max-width:  1440 px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .main-container {
@@ -52,11 +57,13 @@ body {
 .neutralStar {
     color: var(--main-bg-color)
 }
-/****** Header avec Nav ***********/
+/****** Header avec Nav ******/
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 79px;
+
 }
 
 .navigation-header ul {
@@ -64,9 +71,22 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
+    gap: 10px;
 }
 
+.navigation-header {
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    align-items: baseline   ;
+}
 
+header img {
+    padding: 30px 50px;
+    height: 19px;
+    width: 61.09;
+
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
