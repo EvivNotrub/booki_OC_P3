@@ -16,7 +16,9 @@
 body {
     display: flex;
     justify-content: center;
-    max-width:  1440 px;
+    max-width:  1440px;
+    min-width: 320px;
+    font-size: 16px;
 }
 
 a {
@@ -63,29 +65,27 @@ header {
     flex-direction: row;
     justify-content: space-between;
     height: 79px;
-
+    padding: 0px 50px;
 }
 
-.navigation-header ul {
+nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:flex-end;
     list-style-type: none;
-    gap: 10px;
-}
-
-.navigation-header {
-    display: flex;
-    flex-direction: rows;
-    justify-content: space-between;
-    align-items: baseline   ;
+    gap: 69px;
+    box-sizing: border-box;
+    margin-top: 16px;
 }
 
 header img {
     padding: 30px 50px;
     height: 19px;
     width: 61.09;
+}
 
+header input:hover {
+    border-top: solid #0065FC 2px;
 }
 
 /****** Hebergements And Populaires ***********/
