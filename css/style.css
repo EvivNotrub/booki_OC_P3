@@ -19,10 +19,13 @@ body {
     max-width:  1440px;
     min-width: 320px;
     font-size: 16px;
+    margin: 0px 50px;
+    gap: 30px;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .main-container {
@@ -65,26 +68,29 @@ header {
     flex-direction: row;
     justify-content: space-between;
     height: 79px;
-    padding: 0px 50px;
 }
 
-nav ul {
+.nav-header ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
-    list-style-type: none;
     gap: 69px;
-    box-sizing: border-box;
-    margin-top: 16px;
+    margin: 0;
+}
+
+.nav-header li {
+    padding-top: 16px;
+
 }
 
 header img {
-    padding: 30px 50px;
+    margin: 30px 0px;
     height: 19px;
-    width: 61.09;
+    width: 61px;
 }
 
-header input:hover {
+.nav-header li:hover {
     border-top: solid #0065FC 2px;
 }
 
