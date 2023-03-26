@@ -16,11 +16,8 @@
 body {
     display: flex;
     justify-content: center;
-    max-width:  1440px;
-    min-width: 320px;
+    margin: 0;
     font-size: 16px;
-    margin: 0px 50px;
-    gap: 30px;
 }
 
 a {
@@ -31,7 +28,9 @@ a {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    min-width: 320px;
+    margin: 0 50px;
+    gap: 30px;
     box-sizing: border-box;
 }
 
@@ -74,7 +73,7 @@ header {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: start;
     gap: 69px;
     margin: 0;
 }
@@ -92,6 +91,7 @@ header img {
 
 .nav-header li:hover {
     border-top: solid #0065FC 2px;
+    padding-top: 15px;
 }
 
 /****** Hebergements And Populaires ***********/
