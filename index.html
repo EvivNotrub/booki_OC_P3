@@ -8,19 +8,168 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/07c53e1cc6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <div>
+                <img src="images/logo/Booki.png" alt="logo Booki">
+            </div>
+            <nav class="nav-header">
+                <ul>
+                    <li>
+                        <a href="#hebergements">Hébergements</a>
+                    </li>
+                    <li>
+                        <a href="#activites">Activités</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <section class="hebergements-and-populaires">
+            <section class="form-filtres">
+                <div class="section-title">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <form action="#" method="get">
+                    <label for="search">
+                        <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                    </label>
+                    <input type="search" id="search" name="search-hebergement">
+                    <button class="recherche">Recherche</button>
+                </form>
+                <div>
+                    <h3>Filtres</h3>
+                    <div class="filters">
+                        <form class="filter-button" action="#" method="get">
+                            <label for="economique"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i>
+                            </label>
+                            <input type="button" id="economique" value="Économique">
+                        </form>
+                        <form class="filter-button" action="#" method="get">
+                            <label for="economique"><i class="fa-solid fa-person" style="color: #0065FC;"></i></label>
+                            <input type="button" id="economique" value="Familial">
+                        </form>
+                        <form class="filter-button" action="#" method="get">
+                            <label for="economique"><i class="fa-solid fa-heart" style="color: #0065FC;"></i></label>
+                            <input type="button" id="economique" value="Romantique">
+                        </form>
+                        <form class="filter-button" action="#" method="get">
+                            <label for="economique"><i class="fa-solid fa-fire" style="color: #0065FC;"></i></label>
+                            <input type="button" id="economique" value="Nos pépites">
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-info" style="color: #0065FC;"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+            <section class="hebergements-and-populaires" id="hebergements" >
                 <section class="hebergements">
-
+                    <h2 class="section-title">Hébergements à Marseille</h2>
+                    <div class="hebergements-cards">
+                        <article class="card">
+                            <img src="images/hebergements/fred-kleber.jpg" alt="image d'une chambre bleue de l'hôtel du Port avec deux lits une place">
+                            <div class="card-txt">
+                                <h3 class="card-title">Hôtel du port</h3>
+                                <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="images/hebergements/fred-kleber.jpg" alt="image d'une chambre bleue de l'hôtel du Port avec deux lits une place">
+                            <div class="card-txt">
+                                <h3 class="card-title">Hôtel du port</h3>
+                                <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="images/hebergements/fred-kleber.jpg" alt="image d'une chambre bleue de l'hôtel du Port avec deux lits une place">
+                            <div class="card-txt">
+                                <h3 class="card-title">Hôtel du port</h3>
+                                <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="images/hebergements/fred-kleber.jpg" alt="image d'une chambre bleue de l'hôtel du Port avec deux lits une place">
+                            <div class="card-txt">
+                                <h3 class="card-title">Hôtel du port</h3>
+                                <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="images/hebergements/fred-kleber.jpg" alt="image d'une chambre bleue de l'hôtel du Port avec deux lits une place">
+                            <div class="card-txt">
+                                <h3 class="card-title">Hôtel du port</h3>
+                                <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="images/hebergements/fred-kleber.jpg" alt="image d'une chambre bleue de l'hôtel du Port avec deux lits une place">
+                            <div class="card-txt">
+                                <h3 class="card-title">Hôtel du port</h3>
+                                <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <p>Afficher plus</p>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -82,8 +231,19 @@
                     </div>
                 </section>
             </section>
+            <section id="activites" class="activites">
+                <h2 class="section-title">Activités à Marseille</h2>
+                <div>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+
+        </footer>
     </div>
 </body>
 
