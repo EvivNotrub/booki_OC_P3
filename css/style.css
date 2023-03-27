@@ -29,7 +29,6 @@ a {
     width: 100%;
     max-width: 1440px;
     min-width: 320px;
-    margin: 0 50px;
     gap: 30px;
     box-sizing: border-box;
 }
@@ -66,7 +65,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 79px;
 }
 
 .nav-header ul {
@@ -74,12 +72,14 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    align-items: center;
     gap: 69px;
     margin: 0;
+    padding-left: 0;
 }
 
 .nav-header li {
-    padding-top: 16px;
+    padding: 16px 0px;
 
 }
 
@@ -89,10 +89,7 @@ header img {
     width: 61px;
 }
 
-.nav-header li:hover {
-    border-top: solid #0065FC 2px;
-    padding-top: 14px;
-}
+
 
 /***************************** Hebergements And Populaires ***************************/
 .hebergements-and-populaires {
@@ -183,6 +180,24 @@ header img {
 }
 
 /****** Media queries ***********/
+
+/****  Very Large ***/
+
+/**** Desktop  ****/
+
+@media (min-width: 768px){
+    .main-container {
+        margin: 0 50px;
+    }
+    header {
+        height: 79px;
+    }
+    .nav-header li:hover {
+        border-top: solid #0065FC 2px;
+        padding-top: 14px;
+    }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -219,5 +234,22 @@ header img {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    /********** Header *************/
+    header {
+        flex-direction: column;
+        align-items:center;
+    }
+    .nav-header ul{
+        align-items: baseline; 
+    }
+    .nav-header li {
+        padding-top: 0;
+    }
+    .nav-header li:hover {
+        border-bottom: solid #0065FC 2px;
+
+    }
+    /**********Section recherche*********/
+
+
 }
