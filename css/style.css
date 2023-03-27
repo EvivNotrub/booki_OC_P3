@@ -33,6 +33,10 @@ a {
     box-sizing: border-box;
 }
 
+main section:not(.hebergements, .populaires) {
+    margin-bottom: 35px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
