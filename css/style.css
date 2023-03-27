@@ -89,7 +89,9 @@ header img {
     width: 61px;
 }
 
-
+.nav-header a:hover {
+    color: #0065FC;
+}
 
 /***************************** Hebergements And Populaires ***************************/
 .hebergements-and-populaires {
@@ -247,7 +249,7 @@ header img {
     }
     .nav-header li:hover {
         border-bottom: solid #0065FC 2px;
-
+        padding-bottom: 14px;
     }
     /**********Section recherche*********/
 
