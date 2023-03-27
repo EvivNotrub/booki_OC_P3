@@ -29,10 +29,11 @@ a {
     width: 100%;
     max-width: 1440px;
     min-width: 320px;
-    gap: 30px;
     box-sizing: border-box;
 }
-
+main {
+    margin-top: 30px;
+}
 main section:not(.hebergements, .populaires) {
     margin-bottom: 35px;
 }
@@ -95,6 +96,13 @@ header img {
 
 .nav-header a:hover {
     color: #0065FC;
+}
+/***************************** H1 and Filters and Search ***************************/
+.form-filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 35px;
 }
 
 /***************************** Hebergements And Populaires ***************************/
@@ -184,6 +192,10 @@ header img {
 .populaires-cards .card-rating {
     margin-bottom: 7px;
 }
+/************* Activités*************/
+.activites {
+    padding: 30px;
+}
 
 /****** Media queries ***********/
 
@@ -255,7 +267,9 @@ header img {
         border-bottom: solid #0065FC 2px;
         padding-bottom: 14px;
     }
-    /**********Section recherche*********/
+    /**********Section H1 and Filters and Search *********/
 
-
+    .form-filtres {
+        padding: 0px 20px;
+    }
 }
