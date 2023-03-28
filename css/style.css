@@ -20,11 +20,6 @@ body {
     font-size: 16px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -34,6 +29,7 @@ a {
 main {
     margin-top: 30px;
 }
+
 main section:not(.hebergements, .populaires) {
     margin-bottom: 35px;
 }
@@ -46,6 +42,20 @@ main section:not(.hebergements, .populaires) {
 .title-h3 {
     margin: 0;
     font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+input[type="search"]:focus {
+    outline: none;      /*pour avoir l'effet sur toute la page*/
 }
 
 p {
@@ -110,10 +120,52 @@ header img {
 .h1-and-filters {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
     gap: 35px; 
     /*est-ce bien nécessaire pour juste avoir 35px entre les éléments?*/
 }
+    /******* Search bar ******/
+    .form-search {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+        /*ikon*/
+        .location-ikon {
+            display: inline-block;
+            box-sizing: border-box;/*pareil avec les autres sinon ça dépasse*/
+            width: 50px;
+            height: 49px;
+            background-color: #F2F2F2;
+            border: 1px solid #F2F2F2;
+            border-radius: 15px 0px 0px 15px;
+            text-align: center;
+            position: relative;
+        }
+        .fa-location-dot {
+            height: 18px;
+            width: 14px;
+            position: absolute;
+            left: 18px;
+            top: 15px;
+        }
+        /*search*/
+        .search-location {
+            box-sizing: border-box; /*pareil avec les autres sinon ça dépasse*/
+            height: 49px;
+            width: 195px;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            border-top:solid 2px #F2F2F2;
+            border-bottom:solid 2px #F2F2F2;
+        }
+
+        /*button*/
+
+    /******* Filtres ******/
+    /******* Info bar ******/
 .info {
     display: flex;
     align-items: center; /*il n'y aurait pas une autre possibilité plus simple?*/

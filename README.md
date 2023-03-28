@@ -24,4 +24,7 @@
 
 # Section H1 and filters:
     -probablement grid pour les forms avec <buttons> car voir version smartphone
-    - 
+    - p ans pop : 5px margin or else
+    - ::placeholder style in general section for CSS
+    - input[type="search"]:focus {outline:none} dans général ??
+    
