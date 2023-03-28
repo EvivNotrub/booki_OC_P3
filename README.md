@@ -21,3 +21,7 @@
         sinon pour tous
     -Padding interne sections Hébergt 30px
         mobile passe 20px sur cotés
+
+# Section H1 and filters:
+    -probablement grid pour les forms avec <buttons> car voir version smartphone
+    - 
