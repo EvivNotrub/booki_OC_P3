@@ -20,11 +20,6 @@ body {
     font-size: 16px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -34,6 +29,7 @@ a {
 main {
     margin-top: 30px;
 }
+
 main section:not(.hebergements, .populaires) {
     margin-bottom: 35px;
 }
@@ -41,6 +37,29 @@ main section:not(.hebergements, .populaires) {
 .section-title {
     margin: 0;
     font-size: 22px;
+}
+
+.title-h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+input[type="search"]:focus, button:focus {
+    outline: none;      /*pour avoir l'effet sur toute la page*/
+}
+
+p {
+    margin: 8px 0px;
 }
 
 .card {
@@ -85,7 +104,6 @@ header {
 
 .nav-header li {
     padding: 16px 0px;
-
 }
 
 header img {
@@ -98,13 +116,106 @@ header img {
     color: #0065FC;
 }
 /***************************** H1 and Filters and Search ***************************/
-.form-filtres {
+.h1-and-filters {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
     gap: 35px; 
     /*est-ce bien nécessaire pour juste avoir 35px entre les éléments?*/
 }
+    /**H1 and p **/
+    p {
+        margin-bottom: 0;
+    }
+    /******* Search bar ******/
+    .form-search {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+        /*ikon*/
+        .location-ikon {
+            display: inline-block;
+            box-sizing: border-box;/*pareil avec les autres sinon ça dépasse*/
+            width: 50px;
+            height: 49px;
+            background-color: #F2F2F2;
+            border: 1px solid #F2F2F2;
+            border-radius: 15px 0px 0px 15px;
+            text-align: center;
+            position: relative;
+        }
+        .fa-location-dot {
+            height: 18px;
+            width: 14px;
+            position: absolute;
+            left: 18px;
+            top: 15px;
+        }
+        /*search*/
+        .search-location {
+            box-sizing: border-box; /*pareil avec les autres sinon ça dépasse*/
+            height: 49px;
+            width: 195px;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            border-top:solid 2px #F2F2F2;
+            border-bottom:solid 2px #F2F2F2;
+        }
+        /*button*/
+        .button-location {
+            box-sizing: border-box;
+            width: 132px;
+            height: 49px;
+            background: #0065FC;
+            border: 1px solid #0065FC;
+            border-radius: 0px 15px 15px 0px;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    /******* Filtres ******/
+    .filter-button {  /*ici j'avais mis flex:none; mais cela inlfu sur le gap 10px meilleurs rendu?*/
+        flex: none;
+        box-sizing: border-box;
+        height: 50px;
+        padding: 4px 19px;
+        border: 2px solid #D9D9D9;
+        border-radius: 25px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter-button:hover {
+        background-color: #DEEBFF;
+    }
+
+    .filter-button input {
+        font-weight: 700;
+        font-size: 17px;
+        background-color: white;
+        border: none;
+        padding: 0;
+        background-color: inherit;
+    }
+    .filter-button label {
+        width: 22px;
+        height: 22px;
+        position: relative;
+        font-size: 21px;
+    }
+    .fa-money-bill-wave, .fa-fire , .fa-heart, .fa-person {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+        
+    
+    /******* Info bar ******/
 .info {
     display: flex;
     align-items: center; /*il n'y aurait pas une autre possibilité plus simple?*/
@@ -220,17 +331,31 @@ header img {
 /****  Very Large ***/
 
 /**** Desktop  ****/
-
+@media (min-width: 1024px) {
+    .filters {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+}
+/*from medium up*/
 @media (min-width: 768px){
     .main-container {
         margin: 0 50px;
     }
+    /**Section header**/
     header {
         height: 79px;
     }
     .nav-header li:hover {
         border-top: solid #0065FC 2px;
         padding-top: 14px;
+    }
+    /**section h1 et filtres**/
+    .filter-buttons {
+        display: flex;
+        gap: 15px;
+        align-items: center;
     }
 }
 
@@ -266,8 +391,13 @@ header img {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    /**section h1 et filtres**/
+    .filters {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /********** Header *************/
@@ -287,7 +417,14 @@ header img {
     }
     /**********Section H1 and Filters and Search *********/
 
-    .form-filtres {
+    .h1-and-filters {
         padding: 0px 20px;
+    }
+    
+    .filter-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 20px;
     }
 }
