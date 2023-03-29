@@ -137,6 +137,7 @@ header img {
     }
         /*ikon*/
         .location-ikon {
+            flex: none;
             display: inline-block;
             box-sizing: border-box;/*pareil avec les autres sinon ça dépasse*/
             width: 50px;
@@ -168,6 +169,7 @@ header img {
         }
         /*button*/
         .button-location {
+            flex: none;
             box-sizing: border-box;
             width: 132px;
             height: 49px;
@@ -359,6 +361,9 @@ header img {
         gap: 15px;
         align-items: center;
     }
+    .fa-magnifying-glass {
+        display: none;
+    }
 }
 
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -426,11 +431,28 @@ header img {
     .h1-and-filters {
         padding: 0px 20px;
     }
-    
+    .form-search {
+        width: 75%;
+        max-width: 350px;
+        position: relative;
+    }
+    .search-location {
+        flex: 1;
+    }
+    .button-location {
+        width: 49px;
+        border-radius: 15px;
+        position: absolute;
+        left: 90%;
+    }
+    .hide-at-breakpoint-768 {
+        display: none;
+    }
     .filter-buttons {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
         row-gap: 20px;
     }
-}
+
+}   
