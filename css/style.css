@@ -95,7 +95,7 @@ header {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 69px;
     margin: 0;
@@ -104,7 +104,8 @@ header {
 
 .nav-header li {
     padding: 16px 0px;
-
+    flex: 1;
+    text-align: center;
 }
 
 header img {
@@ -124,6 +125,10 @@ header img {
     gap: 35px; 
     /*est-ce bien nécessaire pour juste avoir 35px entre les éléments?*/
 }
+    /**H1 and p **/
+    p {
+        margin-bottom: 0;
+    }
     /******* Search bar ******/
     .form-search {
         display: flex;
@@ -183,20 +188,26 @@ header img {
         border-radius: 25px;
         display: flex;
         gap: 10px;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+    }
+    .filter-button:hover {
+        background-color: #DEEBFF;
     }
 
     .filter-button input {
         font-weight: 700;
+        font-size: 17px;
         background-color: white;
         border: none;
         padding: 0;
+        background-color: inherit;
     }
     .filter-button label {
         width: 22px;
         height: 22px;
         position: relative;
+        font-size: 21px;
     }
     .fa-money-bill-wave, .fa-fire , .fa-heart, .fa-person {
         position: absolute;
@@ -396,8 +407,12 @@ header img {
         flex-direction: column;
         align-items:center;
     }
-    .nav-header ul{
-        align-items: baseline; 
+    .nav-header {
+        width: 100%;
+    }
+    .nav-header ul {
+        align-items: baseline;
+        gap: 0;
     }
     .nav-header li {
         padding-top: 0;
@@ -415,6 +430,7 @@ header img {
     .filter-buttons {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        column-gap: 10px;
+        row-gap: 20px;
     }
 }
