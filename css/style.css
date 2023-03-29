@@ -198,6 +198,13 @@ header img {
         height: 22px;
         position: relative;
     }
+    .fa-money-bill-wave, .fa-fire , .fa-heart, .fa-person {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+        
     
     /******* Info bar ******/
 .info {
