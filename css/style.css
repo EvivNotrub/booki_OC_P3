@@ -46,7 +46,7 @@ main section:not(.hebergements, .populaires) {
 
 a {
     text-decoration: none;
-    color: black;
+    color: inherit; /*ici cela permet d'avoir la bonne couleur au hover du container parent*/
 }
 
 ::placeholder {
@@ -114,8 +114,8 @@ header img {
     width: 61px;
 }
 
-.nav-header a:hover {
-    color: #0065FC;
+.nav-header li:hover {
+    color: #0065FC; /*couplé à 'color: inherit;' sur balises a*/
 }
 /***************************** H1 and Filters and Search ***************************/
 .h1-and-filters {
