@@ -49,6 +49,11 @@ a {
     color: inherit; /*ici cela permet d'avoir la bonne couleur au hover du container parent*/
 }
 
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 ::placeholder {
     color: black;
     opacity: 1;
@@ -92,14 +97,12 @@ p {
     }
 
     .nav-header ul {
-        list-style-type: none;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 69px;
         margin: 0;
-        padding-left: 0;
     }
 
     .nav-header li {
@@ -329,6 +332,19 @@ p {
     padding: 30px;
 }
 
+/************ Footer ************/
+.flex {
+    display: flex;
+}
+.frow {
+    flex-direction: row;
+}
+.fcolumn {
+    flex-direction: column;
+}
+.gap15 {
+    gap: 15px;
+}
 /*************************** Media queries *************************/
 
     /****  Very Large ***/
