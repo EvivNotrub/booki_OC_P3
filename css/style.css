@@ -37,6 +37,7 @@ main section:not(.hebergements, .populaires) {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
 }
 
 .title-h3 {
@@ -273,7 +274,7 @@ p {
             box-sizing: content-box;
             border-radius: 20px 20px 0px 0px;
         }
-    /***************************** Hebergements ********************************/
+    /***************************** Populaires ********************************/
         .populaires {
             width: 31%;
             padding: 30px;
@@ -330,6 +331,9 @@ p {
 /************* Activités*************/
 .activites {
     padding: 30px;
+}
+.activites .card {
+    padding: 0;
 }
 
 /************ Footer ************/
@@ -389,19 +393,24 @@ p {
                     background-color: var(--main-bg-color);
                 }
                 /**Populaires**/
-
+                .populaires {
+                    background-color: var(--main-bg-color);
+                }
         }
     /* Medium devices (tablets, less/equal than 1024px) */
+
         @media (max-width: 1024px) {
+            
+            /**section hébergement et populaire **/
             .hebergements-and-populaires {
                 flex-direction: column;
                 gap: 50px;
             }
-
+            /**Hebergements**/
             .hebergements {
                 width: 100%;
             }
-
+            /**Populaires**/
             .populaires {
                 width: 100%;
             }
@@ -410,6 +419,7 @@ p {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                gap: 20px;
             }
 
             .populaires-cards .card {
@@ -491,12 +501,18 @@ p {
                     border-radius: 0;
                     padding: 20px;
                 }
+                /**hebergement**/
                 .hebergements {
                     background-color: white;
                     gap: 15px;
                 }
+                /**populaires**/
                 .populaires {
                     background-color: var(--main-bg-color);
                 }
+                .populaires-cards {
+                    gap: 15px;
+                }
+
 
         }           
