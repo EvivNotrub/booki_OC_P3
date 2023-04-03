@@ -353,22 +353,23 @@ p {
     }
     .activites-cards {
         display: flex;
+        justify-content: space-evenly;
         gap: 30px;
     }
     .activites .card {
-        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: stretch;
         padding: 0;
     }
     .activites-cards .card-title {
+        box-sizing: border-box;
+        height: 14%;
         padding: 20px 19px;
         margin: 0;
     }
     .activites-cards img {
         width: 100%;
-        flex-grow: 1;
+        height: 86%;
         border-radius: 20px 20px 0px 0px;
     }
 /************ Footer ************/
@@ -398,6 +399,10 @@ p {
         }
         .hebergements-and-populaires {
             gap: 40px;
+        }
+        /**Section Activites**/
+        .activites-cards .card {
+            flex: 1;
         }
     }
     /***from small up (more than 768px)***/
@@ -473,6 +478,20 @@ p {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+            }
+        }
+        /***** Tablette only *****/
+        @media (max-width: 1024px) and (min-width: 768px) {
+            /**Section Activites**/
+            .activites-cards .card {
+                height: 270px;
+                width: 193.5px;
+            }
+            .activites-cards .card-title {
+                height: 25%;
+            }
+            .activites-cards img {
+                height: 75%;
             }
         }
     /* Small devices (phones, less than 768px) */
@@ -555,6 +574,19 @@ p {
                 .populaires-cards {
                     gap: 15px;
                 }
-
-
+            /**Section Activites**/
+            .activites-cards {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .activites-cards .card {
+                width: 315px;
+                height: 200px;
+            }
+            .activites-cards .card-title {
+                height: 30%;
+            }
+            .activites-cards img {
+                height: 70%;
+            }
         }           
