@@ -463,24 +463,6 @@ p {
                 width: 100%;
             }
 
-            .populaires-cards {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                gap: 20px;
-            }
-
-            .populaires-cards .card {
-                width: 30%;
-            }
-
-            .populaires-cards .card-title {
-                font-size: 14px;
-            }
-
-            .populaires-cards .card-subtitle {
-                font-size: 13px;
-            }
             /**section h1 et filtres**/
             .filters {
                 display: flex;
@@ -490,16 +472,40 @@ p {
         }
         /***** Tablette only *****/
         @media (max-width: 1024px) and (min-width: 768px) {
+            /****hébergements ****/
+            .hebergements-cards .card-title {
+                font-size: 14px;
+            }
+            .hebergements-cards .card-subtitle {
+                font-size: 13px;
+            }
+            /*** populaires ***/
+            .populaires-cards {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 20px;
+            }
+            .populaires-cards .card-title {
+                font-size: 14px;
+            }
+
+            .populaires-cards .card-subtitle {
+                font-size: 13px;
+            }
+            .populaires-cards .card {
+                width: 30%;
+            }
             /**Section Activites**/
             .activites-cards .card {
                 height: 270px;
                 width: 193.5px;
             }
             .activites-cards .card-title {
-                height: 27%;
+                font-size: 14px;
+                height: 26%;
             }
             .activites-cards img {
-                height: 73%;
+                height: 74%;
             }
         }
     /* Small devices (phones, less than 768px) */
@@ -580,8 +586,10 @@ p {
                     background-color: var(--main-bg-color);
                 }
                 .populaires-cards {
+                    flex-direction: column;
                     gap: 15px;
                 }
+
             /**Section Activites**/
             .activites-cards {
                 flex-direction: column;
