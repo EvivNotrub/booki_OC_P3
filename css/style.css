@@ -65,6 +65,10 @@ input[type="search"]:focus, button:focus {
     outline: none;      /*pour avoir l'effet sur toute la page*/
 }
 
+h4 {
+    margin: 0;
+}
+
 p {
     margin: 0;
 }
@@ -274,9 +278,6 @@ p {
             flex-direction: column;
             gap: 9px; /*sur figma 4 plus 5 de 'padding' mais ici le padding est sur toutes les .card*/
         }
-        .hebergements-cards .card-title {
-            margin: 0;
-        }
         .hebergements-cards img {
             width: 100%;
             height: 124px;
@@ -366,10 +367,11 @@ p {
         padding: 0;
     }
     .activites-cards .card-title {
+        display: flex;
+        align-items: center;
         box-sizing: border-box;
         height: 14%;
-        padding: 20px 19px;
-        margin: 0;
+        padding: 0 19px;
     }
     .activites-cards img {
         width: 100%;
@@ -494,10 +496,10 @@ p {
                 width: 193.5px;
             }
             .activites-cards .card-title {
-                height: 25%;
+                height: 27%;
             }
             .activites-cards img {
-                height: 75%;
+                height: 73%;
             }
         }
     /* Small devices (phones, less than 768px) */
