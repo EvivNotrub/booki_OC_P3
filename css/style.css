@@ -53,6 +53,7 @@ a {
 ul {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 ::placeholder {
@@ -103,7 +104,6 @@ p {
         justify-content: center;
         align-items: center;
         gap: 69px;
-        margin: 0;
     }
 
     .nav-header li {
@@ -373,16 +373,18 @@ p {
         border-radius: 20px 20px 0px 0px;
     }
 /************ Footer ************/
-    .flex {
+    .footer {
         display: flex;
+        justify-content: stretch;
     }
-    .frow {
-        flex-direction: row;
+    .footer-list {
+        padding: 20px;
+        flex: 1;
     }
-    .fcolumn {
+    .footer-lines {
+        display: flex;
         flex-direction: column;
-    }
-    .gap15 {
+        justify-content: flex-start;
         gap: 15px;
     }
 
@@ -544,7 +546,7 @@ p {
                     column-gap: 10px;
                     row-gap: 20px;
                 }
-                /**section hébergement et populaire **/
+            /**section hébergement et populaire **/
                 .hebergements-and-populaires {
                     flex-direction: column-reverse;
                     justify-content: space-around;
@@ -589,4 +591,11 @@ p {
             .activites-cards img {
                 height: 70%;
             }
+            /************ Footer ************/
+                .footer {
+                    flex-direction: column;
+                    padding: 10px;
+                    gap: 10px;
+                    align-items: stretch;
+                }
         }           
