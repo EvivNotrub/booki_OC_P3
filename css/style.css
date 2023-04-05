@@ -543,7 +543,6 @@ p {
                     width: 100%;
                     max-width: 350px;
                     position: relative;
-                    margin-right: 10px; /*pour compenser la position absolue du .button-location*/
                 }
                 .search-location {
                     flex: 1;
@@ -551,8 +550,8 @@ p {
                 .button-location {
                     width: 49px;
                     border-radius: 15px;
-                    position: absolute;
-                    left: 88%;
+                    position: relative;
+                    left: -10px;
                 }
                 .hide-at-breakpoint-768 {
                     display: none;
