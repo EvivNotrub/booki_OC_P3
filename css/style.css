@@ -311,10 +311,11 @@ p {
             justify-content: space-between;
             align-items: center;
         }
-
+        .populaires-cards article {
+            height: 146px;
+        }
         .populaires-cards .card {
             display: flex;
-            height: 146px;
         }
 
         .populaires-cards img {
@@ -409,7 +410,7 @@ p {
             gap: 40px;
         }
         /**Section Activites**/
-        .activites-cards .card {
+        .activites-cards article {
             flex: 1;
         }
     }
@@ -492,11 +493,11 @@ p {
             .populaires-cards .card-subtitle {
                 font-size: 13px;
             }
-            .populaires-cards .card {
+            .populaires-cards article {
                 width: 30%;
             }
             /**Section Activites**/
-            .activites-cards .card {
+            .activites-cards article {
                 height: 270px;
                 width: 193.5px;
             }
@@ -577,7 +578,7 @@ p {
                      grid-template-columns: 1fr;
                      gap: 15px;
                 }
-                .hebergements-cards .card {
+                .hebergements-cards article {
                     box-sizing: border-box;
                     width: 100%;
                 }
@@ -595,7 +596,7 @@ p {
                 flex-direction: column;
                 gap: 15px;
             }
-            .activites-cards .card {
+            .activites-cards article {
                 width: 315px;
                 height: 200px;
             }
