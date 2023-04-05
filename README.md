@@ -10,6 +10,7 @@
             <i class="fa-solid fa-heart" style="color: #0065FC;"></i>
             <i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i>
             <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
 # Notes for W CSS:
     -Marge ou padding pour 'Activités Marseil': 30px // ok
         toute pages confondues
