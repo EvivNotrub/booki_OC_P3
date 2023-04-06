@@ -193,7 +193,6 @@ p {
         }
     /******* Filtres ******/
     .filter-button {  /*ici j'avais mis flex:none; mais cela inlfu sur le gap 10px meilleurs rendu?*/
-        flex: none;
         box-sizing: border-box;
         height: 50px;
         padding: 4px 19px;
@@ -372,11 +371,11 @@ p {
     }
     .activites-cards .card-article {
         flex: 1;
+        padding: 0;
     }
     .activites .card {
         display: flex;
         flex-direction: column;
-        padding: 0;
     }
     .activites-cards .card-title {
         display: flex;
@@ -394,6 +393,7 @@ p {
     .footer {
         display: flex;
         justify-content: stretch;
+        background-color: #F2F2F2;
     }
     .footer-list {
         padding: 20px;
@@ -464,6 +464,9 @@ p {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+            }
+            .filter-button input {
+                font-size: 16px;
             }
             
             /**section hébergement et populaire **/
@@ -567,6 +570,9 @@ p {
                     grid-template-columns: repeat(2, 1fr);
                     column-gap: 10px;
                     row-gap: 20px;
+                }
+                .filter-button input {
+                    font-size: 14px;
                 }
             /**section hébergement et populaire **/
                 .hebergements-and-populaires {
