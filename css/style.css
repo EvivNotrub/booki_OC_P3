@@ -597,6 +597,24 @@ p {
                     box-sizing: border-box;
                     width: 100%;
                 }
+                .port {
+                    grid-row: 1;
+                }
+                .amina {
+                    grid-row: 6;
+                }
+                .mouettes {
+                    grid-row: 3;
+                }
+                .mer {
+                    grid-row: 4;
+                }
+                .canebiere {
+                    grid-row: 2;
+                }
+                .panier {
+                    grid-row: 5;
+                }
                 /**populaires**/
                 .populaires {
                     background-color: var(--main-bg-color);
