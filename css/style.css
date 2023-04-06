@@ -73,12 +73,15 @@ p {
     margin: 0;
 }
 
-.card {
+.card-article {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
+.card {             /*ayant ajouté <a> après dans <article> cela permet*/ 
+    height: 100%;   /*de m'assurer que toute la place est prise pour toutes*/
+}                    /*les cartes*/
 
 .card img {
     object-fit: cover;
@@ -190,7 +193,6 @@ p {
         }
     /******* Filtres ******/
     .filter-button {  /*ici j'avais mis flex:none; mais cela inlfu sur le gap 10px meilleurs rendu?*/
-        flex: none;
         box-sizing: border-box;
         height: 50px;
         padding: 4px 19px;
@@ -276,6 +278,7 @@ p {
         .hebergements-cards .card {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             gap: 9px; /*sur figma 4 plus 5 de 'padding' mais ici le padding est sur toutes les .card*/
         }
         .hebergements-cards img {
@@ -290,6 +293,7 @@ p {
             height:fit-content;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             gap: 8px;
         }
     /***************************** Populaires ********************************/
@@ -298,7 +302,7 @@ p {
             padding: 30px;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: flex-start;
             gap: 30px;
         }
         .populaires-cards {
@@ -312,6 +316,10 @@ p {
             align-items: center;
         }
 
+        .populaires-cards .card-article {
+            flex: 1;
+        }
+        
         .populaires-cards .card {
             display: flex;
             height: 146px;
@@ -340,9 +348,9 @@ p {
         .populaires-cards .card-subtitle {
             margin: 0;
         }
-
+        
         .populaires-cards .card-rating {
-            margin-bottom: 7px;
+            margin-bottom: 5px;
         }
         /***************afficher plus ***************/
         p[class="title-h3"] {  /*ici j'aurai pu mettre cela dans "title-h3" mais c'est pour essayer la fonctionnalité*/
@@ -361,10 +369,13 @@ p {
         justify-content: space-evenly;
         gap: 30px;
     }
+    .activites-cards .card-article {
+        flex: 1;
+        padding: 0;
+    }
     .activites .card {
         display: flex;
         flex-direction: column;
-        padding: 0;
     }
     .activites-cards .card-title {
         display: flex;
@@ -382,6 +393,7 @@ p {
     .footer {
         display: flex;
         justify-content: stretch;
+        background-color: #F2F2F2;
     }
     .footer-list {
         padding: 20px;
@@ -409,9 +421,7 @@ p {
             gap: 40px;
         }
         /**Section Activites**/
-        .activites-cards .card {
-            flex: 1;
-        }
+        
     }
     /***from small up (more than 768px)***/
         @media (min-width: 768px){
@@ -448,6 +458,16 @@ p {
     /* Medium devices (tablets, less/equal than 1024px) */
 
         @media (max-width: 1024px) {
+
+            /**section h1 et filtres**/
+            .filters {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .filter-button input {
+                font-size: 16px;
+            }
             
             /**section hébergement et populaire **/
             .hebergements-and-populaires {
@@ -463,12 +483,6 @@ p {
                 width: 100%;
             }
 
-            /**section h1 et filtres**/
-            .filters {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
         }
         /***** Tablette only *****/
         @media (max-width: 1024px) and (min-width: 768px) {
@@ -492,11 +506,11 @@ p {
             .populaires-cards .card-subtitle {
                 font-size: 13px;
             }
-            .populaires-cards .card {
+            .populaires-cards article {
                 width: 30%;
             }
             /**Section Activites**/
-            .activites-cards .card {
+            .activites-cards .card-article {
                 height: 270px;
                 width: 193.5px;
             }
@@ -538,7 +552,6 @@ p {
                     width: 100%;
                     max-width: 350px;
                     position: relative;
-                    margin-right: 10px; /*pour compenser la position absolue du .button-location*/
                 }
                 .search-location {
                     flex: 1;
@@ -546,8 +559,8 @@ p {
                 .button-location {
                     width: 49px;
                     border-radius: 15px;
-                    position: absolute;
-                    left: 88%;
+                    position: relative;
+                    left: -10px;
                 }
                 .hide-at-breakpoint-768 {
                     display: none;
@@ -557,6 +570,9 @@ p {
                     grid-template-columns: repeat(2, 1fr);
                     column-gap: 10px;
                     row-gap: 20px;
+                }
+                .filter-button input {
+                    font-size: 14px;
                 }
             /**section hébergement et populaire **/
                 .hebergements-and-populaires {
@@ -577,7 +593,7 @@ p {
                      grid-template-columns: 1fr;
                      gap: 15px;
                 }
-                .hebergements-cards .card {
+                .hebergements-cards article {
                     box-sizing: border-box;
                     width: 100%;
                 }
@@ -595,8 +611,8 @@ p {
                 flex-direction: column;
                 gap: 15px;
             }
-            .activites-cards .card {
-                width: 315px;
+            .activites-cards .card-article {
+                flex: none; /*pour remédier à l'étirement verticale du flex: 1; en version normale*/
                 height: 200px;
             }
             .activites-cards .card-title {
