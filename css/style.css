@@ -137,7 +137,7 @@ p {
     /*est-ce bien nécessaire pour juste avoir 35px entre les éléments?*/
 }
     /**H1 and p **/
-    .info p {
+    .addition-to-h1 {
     margin: 8px 0px 0px 0px;
     }
     /******* Search bar ******/
@@ -596,6 +596,24 @@ p {
                 .hebergements-cards article {
                     box-sizing: border-box;
                     width: 100%;
+                }
+                .port {
+                    grid-row: 1;
+                }
+                .amina {
+                    grid-row: 6;
+                }
+                .mouettes {
+                    grid-row: 3;
+                }
+                .mer {
+                    grid-row: 4;
+                }
+                .canebiere {
+                    grid-row: 2;
+                }
+                .panier {
+                    grid-row: 5;
                 }
                 /**populaires**/
                 .populaires {
