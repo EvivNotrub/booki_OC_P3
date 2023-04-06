@@ -137,7 +137,7 @@ p {
     /*est-ce bien nécessaire pour juste avoir 35px entre les éléments?*/
 }
     /**H1 and p **/
-    .info p {
+    .addition-to-h1 {
     margin: 8px 0px 0px 0px;
     }
     /******* Search bar ******/
