@@ -4,7 +4,7 @@
 }
 
 :root {
-    --main-color: #0065FC;
+    --main-color: #0065FC; /*style de couleurs défini pour toute la page*/
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
@@ -22,7 +22,7 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1440px; /*taille limite d'affichage défini par les spécifications*/
     min-width: 320px;
     box-sizing: border-box;
 }
@@ -51,14 +51,14 @@ a {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; /*enlever les points de liste et espace par défaut*/
     padding-left: 0;
     margin: 0;
 }
 
 ::placeholder {
     color: black;
-    opacity: 1;
+    opacity: 1; /*pour que l'effet soit cohérent sur toute la page*/
 }
 
 input[type="search"]:focus, button:focus {
@@ -73,7 +73,7 @@ p {
     margin: 0;
 }
 
-.card-article {
+.card-article { /*format uniforme à la plupart des cartes: exception padding des activités à 0*/
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -115,7 +115,7 @@ p {
 
     .nav-header li {
         padding: 16px 0px;
-        flex: 1;
+        flex: 1;            /*assure une disposition sur toute la longueur uniformemment surtout en mobile*/
         text-align: center;
     }
 
@@ -159,7 +159,7 @@ p {
             text-align: center;
             position: relative;
         }
-        .fa-location-dot {
+        .fa-location-dot { /*dimensions icone et positionnement dans conteneur*/
             height: 18px;
             width: 14px;
             position: absolute;
