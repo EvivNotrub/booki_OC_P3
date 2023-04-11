@@ -18,12 +18,12 @@
 
 <body>
     <div class="main-container">
-        <header>
+        <header class="flex">
             <div>
                 <img src="images/logo/Booki.png" alt="logo Booki">
             </div>
             <nav class="nav-header">
-                <ul>
+                <ul class="flex">
                     <li>
                         <a href="#hebergements">Hébergements</a>
                     </li>
@@ -35,13 +35,13 @@
         </header>
         <!-- 30px ok sur main -->
         <main>
-            <section class="h1-and-filters">
+            <section class="h1-and-filters flex">
                 <div>
                     <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p class="addition-to-h1">En plein centre-ville ou en pleine nature</p>
                 </div>
                 <!-- 35px -->
-                <form class="form-search" action="#" method="get">
+                <form class="form-search flex" action="#" method="get">
                     <label class="location-ikon" for="search-location">
                         <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                     </label>
@@ -52,34 +52,34 @@
                 <div class="filters">
                     <h3 class="title-h3">Filtres</h3>
                     <div class="filter-buttons">
-                        <form class="filter-button" action="#" method="get">
+                        <form class="filter-button flex" action="#" method="get">
                             <label for="economique"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i>
                             </label>
                             <input type="button" id="economique" value="Économique">
                         </form>
-                        <form class="filter-button" action="#" method="get">
+                        <form class="filter-button flex" action="#" method="get">
                             <label for="familial"><i class="fa-solid fa-person" style="color: #0065FC;"></i></label>
                             <input type="button" id="familial" value="Familial">
                         </form>
-                        <form class="filter-button" action="#" method="get">
+                        <form class="filter-button flex" action="#" method="get">
                             <label for="romantique"><i class="fa-solid fa-heart" style="color: #0065FC;"></i></label>
                             <input type="button" id="romantique" value="Romantique">
                         </form>
-                        <form class="filter-button" action="#" method="get">
+                        <form class="filter-button flex" action="#" method="get">
                             <label for="pepites"><i class="fa-solid fa-fire" style="color: #0065FC;"></i></label>
                             <input type="button" id="pepites" value="Nos pépites">
                         </form>
                     </div>
                 </div>
                 <!-- 35px -->
-                <div class="info">
+                <div class="info flex">
                     <div class="ikon-info"><i class="fa-solid fa-info"></i></div>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
             <!-- 35px ok main section {margin-bottom}-->
-            <section class="hebergements-and-populaires" id="hebergements" > <!--choix de h4 pour les articles car h3 déjà utilisé à un niveau plus élevé: dans footer et dans section du haut "titre h1 et filtres"-->
-                <section class="hebergements">
+            <section class="hebergements-and-populaires flex" id="hebergements" > <!--choix de h4 pour les articles car h3 déjà utilisé à un niveau plus élevé: dans footer et dans section du haut "titre h1 et filtres"-->
+                <section class="hebergements flex">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <article class="card-article port">
@@ -187,16 +187,16 @@
                     </div>
                     <p class="title-h3">Afficher plus</p> <!-- ici le choix de <p> malgré un style h3 se justifie car 'afficher plus' n'a pas besoin d'être référencé comme titre-->
                 </section>
-                <section class="populaires">
-                    <div class="populaires-title">
+                <section class="populaires flex">
+                    <div class="populaires-title flex">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="populaires-cards">
+                    <div class="populaires-cards flex">
                         <article class="card-article">
                             <a href="#" class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image d'une chambre au murs vert de l'Hôtel Le soleil du matin montrant un lit double">
-                                <div class="card-content">
+                                <div class="card-content flex">
                                     <div class="card-txt">
                                         <h4 class="card-title">Hôtel Le soleil du matin</h4>
                                         <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
@@ -215,7 +215,7 @@
                         <article class="card-article">
                             <a href="#" class="card">
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image d'une chambre chez Chambres d’hôtes Au cœur de l’eau montrant un lit doule">
-                                <div class="card-content">
+                                <div class="card-content flex">
                                     <div class="card-txt">
                                         <h4 class="card-title">Chambres d’hôtes Au cœur de l’eau</h4>
                                         <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
@@ -234,7 +234,7 @@
                         <article class="card-article">
                             <a href="#" class="card">
                                 <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image d'une chambre de l'Hôtel Bleu et Blanc montrant un lit double">
-                                <div class="card-content">
+                                <div class="card-content flex">
                                     <div class="card-txt">
                                         <h4 class="card-title">Hôtel Bleu et Blanc</h4>
                                         <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
@@ -254,32 +254,32 @@
                 </section>
             </section>
             <!-- 35px ok main section {margin-bottom}-->
-            <section id="activites" class="activites">
+            <section id="activites" class="activites flex">
                 <!-- section: 30px padding ou margin attention bottom-->
                 <h2 class="section-title">Activités à Marseille</h2>
-                <div class="activites-cards"> <!--choix de h4 pour les articles car h3 déjà utilisé à un niveau plus élevé: dans footer et dans section du haut "titre h1 et filtres"-->
+                <div class="activites-cards flex"> <!--choix de h4 pour les articles car h3 déjà utilisé à un niveau plus élevé: dans footer et dans section du haut "titre h1 et filtres"-->
                     <article class="card-article">
                         <a href="#" class="card">
                             <img src="images/activites/reno-laithienne.jpg" alt="photo d'un port avec des bateaux à voiles">
-                            <h4 class="card-title">Vieux-Port</h4>
+                            <h4 class="card-title flex">Vieux-Port</h4>
                         </a>
                     </article>
                     <article class="card-article">
                         <a href="#" class="card">
                             <img src="images/activites/paul-hermann.jpg" alt="photo du Fort de Pomègues au milieu des rochers">
-                            <h4 class="card-title">Fort de Pomègues</h4>
+                            <h4 class="card-title flex">Fort de Pomègues</h4>
                         </a>
                     </article>
                     <article class="card-article">
                         <a href="#" class="card">
                             <img src="images/activites/kilyan-sockalingum.jpg" alt="photo d'une calanque dans le parc national des Calanques">
-                            <h4 class="card-title">Parc national des Calanques</h4>
+                            <h4 class="card-title flex">Parc national des Calanques</h4>
                         </a>
                     </article>
                     <article class="card-article">
                         <a href="#" class="card">
                             <img src="images/activites/florian-wehde.jpg" alt="photo d'une vue sur Notre-Dame-de-la-Garde en contreplongée">
-                            <h4 class="card-title">Notre-Dame-de-la-Garde</h4>
+                            <h4 class="card-title flex">Notre-Dame-de-la-Garde</h4>
                         </a>
                     </article>
                 </div>
@@ -287,7 +287,7 @@
             <!-- 35px ok main section {margin-bottom} -->
         </main>
         <!-- 30px ok padding section activités-->
-        <footer class="footer">
+        <footer class="footer flex">
             <div class="footer-list footer-lines">
                 <h3 class="title-h3">À propos</h3>
                 <ul class="footer-lines">
