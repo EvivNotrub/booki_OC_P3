@@ -7,10 +7,17 @@
     --main-color: #0065FC; /*style de couleurs défini pour toute la page*/
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --filter-border-color: #D9D9D9;
 }
 
+.neutralStar {
+    color: var(--main-bg-color)
+}
 .fa-solid {
     color: var(--main-color);
+}
+.fa-magnifying-glass {
+    color: white;
 }
 
 body {
@@ -96,10 +103,6 @@ p {
     font-weight: 700;
 }
 
-.neutralStar {
-    color: var(--main-bg-color)
-}
-
 .flex {
     display: flex;
 }
@@ -127,7 +130,7 @@ p {
     }
 
     .nav-header li:hover {
-        color: #0065FC; /*couplé à 'color: inherit;' sur balises a*/
+        color: var(--main-color); /*couplé à 'color: inherit;' sur balises a*/
     }
 /***************************** H1 and Filters and Search ***************************/
 .h1-and-filters {
@@ -152,8 +155,8 @@ p {
             box-sizing: border-box;/*pareil avec les autres sinon ça dépasse*/
             width: 50px;
             height: 49px;
-            background-color: #F2F2F2;
-            border: 1px solid #F2F2F2;
+            background-color: var(--main-bg-color);
+            border: 1px solid var(--main-bg-color);
             border-radius: 15px 0px 0px 15px;
             text-align: center;
             position: relative;
@@ -164,6 +167,7 @@ p {
             position: absolute;
             left: 18px;
             top: 15px;
+            color: black;
         }
         /*search*/
         .search-location {
@@ -174,8 +178,8 @@ p {
             font-size: 18px;
             text-align: center;
             border: none;
-            border-top:solid 2px #F2F2F2;
-            border-bottom:solid 2px #F2F2F2;
+            border-top:solid 2px var(--main-bg-color);
+            border-bottom:solid 2px var(--main-bg-color);
         }
         /*button*/
         .button-location {
@@ -183,8 +187,8 @@ p {
             box-sizing: border-box;
             width: 132px;
             height: 49px;
-            background: #0065FC;
-            border: 1px solid #0065FC;
+            background: var(--main-color);
+            border: 1px solid var(--main-color);
             border-radius: 0px 15px 15px 0px;
             color: white;
             font-weight: 700;
@@ -195,14 +199,14 @@ p {
         box-sizing: border-box;
         height: 50px;
         padding: 4px 19px;
-        border: 2px solid #D9D9D9;
+        border: 2px solid var(--filter-border-color);
         border-radius: 25px;
         gap: 10px;
         justify-content: center;
         align-items: center;
     }
     .filter-button:hover {
-        background-color: #DEEBFF;
+        background-color: var(--filter-bg-color);
     }
 
     .filter-button input {
@@ -234,13 +238,12 @@ p {
     .ikon-info {
         width: 24px;
         height: 24px;
-        border: 1px solid #D9D9D9;
+        border: 1px solid var(--filter-border-color);
         text-align: center;
         border-radius: 50%;
         flex-shrink: 0;
     }
     .fa-info {
-        color: #0065FC;
         font-size: 10px;
     }
 
@@ -377,7 +380,7 @@ p {
 /************ Footer ************/
     .footer {
         justify-content: stretch;
-        background-color: #F2F2F2;
+        background-color: var(--main-bg-color);
     }
     .footer-list {
         padding: 20px;
@@ -395,7 +398,7 @@ p {
     /****  Very Large ***/
 
     /**** Desktop and more (more than 1024px)****/
-    @media (min-width: 1024px) {
+    @media (min-width: 1024.01px) {
         .filters {
             display: flex;
             gap: 15px;
@@ -417,7 +420,7 @@ p {
                 height: 79px;
             }
             .nav-header li:hover {
-                border-top: solid #0065FC 2px;
+                border-top: solid var(--main-color) 2px;
                 padding-top: 14px;
             }
             /**section h1 et filtres**/
@@ -524,7 +527,7 @@ p {
                     padding-top: 0;
                 }
                 .nav-header li:hover {
-                    border-bottom: solid #0065FC 2px;
+                    border-bottom: solid var(--main-color) 2px;
                     padding-bottom: 14px;
                 }
             /**********Section H1 and Filters and Search *********/
